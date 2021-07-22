@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
     uint32_t dat1, dat2, dat3;
 
     file1 = fopen(argv[1], "r");
-    file2 = fopen(argv[2], "r");
+    file2 = fopen(argv[1], "r");
     fread(&dat1, sizeof(uint32_t), 1, file1);
     fread(&dat2, sizeof(uint32_t), 1, file2);
     fclose(file1);
